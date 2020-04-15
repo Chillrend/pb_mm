@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PB Memory Match</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        td{
+            background-size: 80px;
+            height:80px;
+            width:80px;
+        }
+.fa-card01 {background-image:url('4grid/1.png');}
+.fa-card02 {background-image:url('4grid/2.png');}
+.fa-card03 {background-image:url('4grid/3.png');}
+.fa-card04 {background-image:url('4grid/4.png');}
+.fa-card05 {background-image:url('4grid/5.png');}
+.fa-card06 {background-image:url('4grid/6.png');}
+.fa-card07 {background-image:url('4grid/7.png');}
+.fa-card08 {background-image:url('4grid/8.png');}
+
+.six.fa-card01 {background-image:url('6grid/1.png');}
+.six.fa-card02 {background-image:url('6grid/2.png');}
+.six.fa-card03 {background-image:url('6grid/3.png');}
+.six.fa-card04 {background-image:url('6grid/4.png');}
+.six.fa-card05 {background-image:url('6grid/5.png');}
+.six.fa-card06 {background-image:url('6grid/6.png');}
+.six.fa-card07 {background-image:url('6grid/7.png');}
+.six.fa-card08 {background-image:url('6grid/8.png');}
+.six.fa-card09 {background-image:url('6grid/9.png');}
+.six.fa-card10 {background-image:url('6grid/10.png');}
+.six.fa-card11 {background-image:url('6grid/11.png');}
+.six.fa-card12 {background-image:url('6grid/12.png');}
+.six.fa-card13 {background-image:url('6grid/13.png');}
+.six.fa-card14 {background-image:url('6grid/14.png');}
+.six.fa-card15 {background-image:url('6grid/15.png');}
+.six.fa-card16 {background-image:url('6grid/16.png');}
+.six.fa-card17 {background-image:url('6grid/17.png');}
+.six.fa-card18 {background-image:url('6grid/18.png');}
+
+
+.eight.fa-card01 {background-image:url('8grid/1.png');}
+.eight.fa-card02 {background-image:url('8grid/2.png');}
+.eight.fa-card03 {background-image:url('8grid/3.png');}
+.eight.fa-card04 {background-image:url('8grid/4.png');}
+.eight.fa-card05 {background-image:url('8grid/5.png');}
+.eight.fa-card06 {background-image:url('8grid/6.png');}
+.eight.fa-card07 {background-image:url('8grid/7.png');}
+.eight.fa-card08 {background-image:url('8grid/8.png');}
+.eight.fa-card09 {background-image:url('8grid/9.png');}
+.eight.fa-card10 {background-image:url('8grid/10.png');}
+.eight.fa-card11 {background-image:url('8grid/11.png');}
+.eight.fa-card12 {background-image:url('8grid/12.png');}
+.eight.fa-card13 {background-image:url('8grid/13.png');}
+.eight.fa-card14 {background-image:url('8grid/14.png');}
+.eight.fa-card15 {background-image:url('8grid/15.png');}
+.eight.fa-card16 {background-image:url('8grid/16.png');}
+.eight.fa-card17 {background-image:url('8grid/17.png');}
+.eight.fa-card18 {background-image:url('8grid/18.png');}
+.eight.fa-card19 {background-image:url('8grid/19.png');}
+.eight.fa-card20 {background-image:url('8grid/20.png');}
+.eight.fa-card21 {background-image:url('8grid/21.png');}
+.eight.fa-card22 {background-image:url('8grid/22.png');}
+.eight.fa-card23 {background-image:url('8grid/23.png');}
+.eight.fa-card24 {background-image:url('8grid/24.png');}
+.eight.fa-card25 {background-image:url('8grid/25.png');}
+.eight.fa-card26 {background-image:url('8grid/26.png');}
+.eight.fa-card27 {background-image:url('8grid/27.png');}
+.eight.fa-card28 {background-image:url('8grid/28.png');}
+.eight.fa-card29 {background-image:url('8grid/29.png');}
+.eight.fa-card30 {background-image:url('8grid/30.png');}
+.eight.fa-card31 {background-image:url('8grid/31.png');}
+.eight.fa-card32 {background-image:url('8grid/32.png');}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#" id="html fomr">
+           
+            Grid size
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="grid" id="inlineRadio1" value="4">
+                    <label class="form-check-label" for="inlineRadio1">4x4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="grid" id="inlineRadio2" value="6">
+                    <label class="form-check-label" for="inlineRadio2">6x6</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="grid" id="inlineRadio3" value="8">
+                    <label class="form-check-label" for="inlineRadio3">8x8</label>
+                  </div>
+            </div>
+
+            <div class="form-group">
+                <label for="htmlBox">HTML List</label>
+                <textarea class="form-control" name="htmlBox" id="htmlBox" rows="5"></textarea>
+            </div>
+
+            <div id="submit_btn" class="btn btn-success">Parse</div>
+        </form>
+    </div>
+    <div class="container" id="append_area">
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+      
+        var lis, grid, elem;
+        var table, trs = {};
+        var exponent = [];
+        var cardObj = {};
+        var funct = {};
+        var tds, local_trs;
+        funct.getRandomColor = function () {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        $('#submit_btn').on("click", evt => {
+   
+            $('#htmlBox').val();
+            $('#append_area').innerHTML = "";
+            grid = parseInt($('input[name="grid"]:checked').val());
+            elem = document.createElement('div');
+            elem.innerHTML = $('#htmlBox').val();
+
+            lis = $(elem).find('li');
+        
+            
+            table = document.createElement("table");
+         
+            for (let i = 0; i < grid; i++) {
+                let exp = grid*(i+1);
+                exponent.push(exp);
+            }
+
+            for (let i = 0; i < lis.length; i++) {
+                let spans = $(lis[i]).find('i');
+                let cuted_spans = $(spans[0]).attr('class').split(' ').pop();
+                console.log(spans);
+                console.log(cuted_spans);
+                if(i == 0 || i == grid || exponent.includes(i) || exponent[exponent.length-1] == i+1){
+                    if(i != 0){
+                        trs[i] = local_trs;
+                        table.appendChild(local_trs);
+                    }
+
+                    if(exponent[exponent.length-1] != i+1){
+                        local_trs = document.createElement('tr');
+                    }
+                }
+
+                if(cardObj.hasOwnProperty(cuted_spans)){
+                    let td = document.createElement("td");
+                    // $(td).css("background-color", cardObj[cuted_spans]["color"]);
+                    (grid == 4) ? $(td).addClass(cuted_spans) : ((grid == 6) ? $(td).addClass('six ' + cuted_spans) : $(td).addClass('eight ' + cuted_spans));
+                    local_trs.appendChild(td);
+                    
+                    console.log(i);
+                }else{
+                    cardObj[cuted_spans] = {};
+                    cardObj[cuted_spans]["color"] = funct.getRandomColor();
+
+                    let td = document.createElement("td");
+                    // $(td).css("background-color", cardObj[cuted_spans]["color"]);
+                    (grid == 4) ? $(td).addClass(cuted_spans) : ((grid == 6) ? $(td).addClass('six ' + cuted_spans) : $(td).addClass('eight ' + cuted_spans));
+                    local_trs.appendChild(td);
+                    console.log(i);
+                }
+
+                if(i == lis.length-1){
+                    trs[i] = local_trs;
+                    table.appendChild(local_trs);
+                }              
+            }
+            var container = $('#append_area');
+            container.append(table);
+        });
+    </script>
+</body>
+</html>
